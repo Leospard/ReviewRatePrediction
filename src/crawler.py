@@ -19,7 +19,7 @@ with open('whole_review.csv', 'a+', newline='',encoding='utf-8-sig') as f:
     columns = ["Brand","Series","CarName","Review","Rate","外观","内饰","配置","空间","舒适性","操控","动力"]
     csv_write.writerow(columns)
 f.close()
-for index in range(5226,6000):
+for index in range(1,6000):
     print("正在爬取第" + str(index) + "款车型")
     page = 1
     for _ in repeat(None):
